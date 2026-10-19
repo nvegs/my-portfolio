@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Header } from "@/components/layout/Header";
+import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -18,12 +19,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} — ${site.title}`,
-    template: `%s · ${site.name}`,
+    default: `${site.shortName} — ${site.title}`,
+    template: `%s · ${site.shortName}`,
   },
   description: site.description,
   openGraph: {
-    title: `${site.name} — ${site.title}`,
+    title: `${site.shortName} — ${site.title}`,
     description: site.description,
     type: "website",
     locale: "en_US",
@@ -38,18 +39,21 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col font-sans text-foreground">
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:text-sm focus:text-background"
-        >
-          Skip to content
-        </a>
-        <Header />
-        <div className="flex-1">{children}</div>
-        <Footer />
+      <body className="min-h-full bg-background font-sans text-foreground">
+        <ThemeProvider>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-accent-foreground"
+          >
+            Skip to content
+          </a>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
