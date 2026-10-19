@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import { ScrollProgressProvider } from "@/components/providers/ScrollProgressProvider";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -44,6 +46,7 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-background font-sans text-foreground">
         <ThemeProvider>
+          <ScrollProgressProvider>
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-accent-foreground"
@@ -53,6 +56,8 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <ScrollToTop />
+          </ScrollProgressProvider>
         </ThemeProvider>
       </body>
     </html>

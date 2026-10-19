@@ -13,7 +13,7 @@ export function Logo() {
       aria-label={`${site.name}, ${site.logoTaglineFull} — home`}
     >
       <motion.div
-        className="relative size-9 shrink-0 overflow-hidden rounded-full ring-2 ring-cyan-600/90 ring-offset-2 ring-offset-background"
+        className="relative size-9 shrink-0 overflow-hidden rounded-full ring-2 ring-accent ring-offset-2 ring-offset-background"
         whileHover={{ scale: 1.06 }}
         transition={{ type: "spring", stiffness: 420, damping: 20 }}
       >
