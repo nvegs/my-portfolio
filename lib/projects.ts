@@ -70,6 +70,7 @@ export const projects: Project[] = [
       "This site — Next.js, TypeScript, Framer Motion, and Tailwind with dark mode, motion, and accessible UI patterns.",
     tech: ["Next.js", "TypeScript", "Framer Motion", "Tailwind"],
     categories: ["Frontend", "Portfolio"],
+    live: "https://my-portfolio-kappa-swart-75.vercel.app/",
   },
 ];
 
