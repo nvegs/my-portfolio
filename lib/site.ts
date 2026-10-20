@@ -16,6 +16,11 @@ export const site = {
   social: {
     github: "https://github.com/nvegs",
     linkedin: "https://www.linkedin.com/in/victorynnabugwu/",
+    whatsapp: "https://wa.me/2347069541209",
+    tiktok: "https://www.tiktok.com/@nvegs13?_r=1&_t=ZS-9Aht73R6WTk",
+    threads: "https://www.threads.com/@nvegs13",
+    x: "https://x.com/NVEGS_13",
+    facebook: "https://www.facebook.com/share/18aVtF3wUG/",
   },
   availabilityBadge: "Remote & hybrid in Nigeria · open worldwide",
   workPreference:
