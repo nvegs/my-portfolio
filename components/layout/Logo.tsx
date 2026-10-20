@@ -18,7 +18,7 @@ export function Logo() {
         transition={{ type: "spring", stiffness: 420, damping: 20 }}
       >
         <Image
-          src="/branding/icon.png"
+          src={site.brandIcon}
           alt=""
           width={36}
           height={36}

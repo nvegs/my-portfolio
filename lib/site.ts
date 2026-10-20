@@ -11,6 +11,8 @@ export const site = {
   phone: "+2347069541209",
   phoneDisplay: "+234 706 954 1209",
   email: "victorynnabugwu13@gmail.com",
+  /** Avatar-only mark (no name/tagline) — navbar logo & favicon source */
+  brandIcon: "/branding/icon.png",
   cvPath: "/cv.pdf",
   cvDownloadName: "Victory_Nnabugwu_Frontend_Engineer_ATS.pdf",
   social: {

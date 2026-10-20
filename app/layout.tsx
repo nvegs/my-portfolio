@@ -20,11 +20,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://my-portfolio-kappa-swart-75.vercel.app"),
   title: {
     default: `${site.shortName} — ${site.title}`,
     template: `%s · ${site.shortName}`,
   },
   description: site.description,
+  icons: {
+    icon: [
+      { url: site.brandIcon, sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: `${site.shortName} — ${site.title}`,
     description: site.description,
