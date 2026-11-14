@@ -17,19 +17,19 @@ export function About() {
         <FadeIn delay={0.1}>
           <div className="space-y-5 text-muted leading-relaxed">
             <p>
-              I&apos;m a Frontend Engineer based in {site.location} with 6+
-              years of experience building scalable, high-performance web
-              applications with React, Next.js, TypeScript, and Angular. I
-              focus on UI/UX, performance, and clean architecture for fintech
-              and enterprise products.
+              I&apos;m a Software Engineer (Web &amp; Mobile) based in{" "}
+              {site.location} with 6+ years of experience building fast,
+              scalable web and mobile applications with React, Next.js, Angular,
+              TypeScript, and React Native. I focus on clean architecture,
+              performance, and great UX — especially for the African market.
             </p>
             <p>
-              At Uridium Works I ship platforms like OmniX and financial
-              reporting tools for the Coronation ecosystem, mentor developers,
-              and partner with design and backend teams in agile delivery. I
-              also shipped products like MR3 Patient, USmartInvoice, and Beam
-              Connect — and care deeply about accessibility, test coverage, and
-              fast experiences on real-world networks.
+              I&apos;m currently freelancing on end-to-end products with
+              Supabase and Docker, while at Uridium Works I ship platforms like
+              OmniX and Coronation financial reporting, mentor developers, and
+              collaborate in agile teams. Past work includes Beam Connect, MR3
+              Patient, and USmartInvoice — with strong attention to
+              accessibility, testing, and real-world network conditions.
             </p>
           </div>
 
@@ -63,7 +63,8 @@ export function About() {
                 {"\n\n"}
                 <span className="text-white/70">Name:</span> {site.name}
                 {"\n"}
-                <span className="text-white/70">Role:</span> Frontend Engineer
+                <span className="text-white/70">Role:</span> Software Engineer
+                (Web &amp; Mobile)
                 {"\n"}
                 <span className="text-white/70">Location:</span> {site.location}{" "}
                 🌍 — Remote / Hybrid (NG)
@@ -74,10 +75,9 @@ export function About() {
                 <span className="text-white/70">Company:</span> Uridium Works
                 Limited
                 {"\n\n"}
-                Stack: React, Next.js, TypeScript, Angular
+                Stack: React, Next.js, React Native, Angular
                 {"\n"}
-                Focus: performance, accessibility, fintech UX
-                {"\n\n"}
+                Focus: performance, clean arch, mobile + web
                 <span className="text-terminal-blue">$</span>{" "}
                 <span className="cursor-blink inline-block h-4 w-2 bg-terminal-green align-middle" />
               </code>

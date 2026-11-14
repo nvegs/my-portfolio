@@ -1,18 +1,21 @@
 export const site = {
   name: "Victory Nnabugwu",
   shortName: "Victory",
-  title: "Frontend Engineer",
+  title: "Software Engineer (Web & Mobile)",
   /** Shown under the logo; keep short so it fits the navbar */
-  logoTagline: "FE · React · Next · Ng",
-  logoTaglineFull: "Frontend Engineer · React · Next.js · Angular",
+  logoTagline: "SWE · React · Next · RN",
+  logoTaglineFull:
+    "Software Engineer · React · Next.js · Angular · React Native",
   description:
-    "Frontend Engineer with 6+ years building scalable, high-performance web apps with React, Next.js, TypeScript, and Angular — focused on UI/UX, performance, and fintech & enterprise products.",
+    "Software Engineer (Web & Mobile) with 6+ years building fast, scalable web and mobile apps with React, Next.js, Angular, TypeScript, and React Native — focused on performance, clean architecture, and products for the African market.",
   location: "Lagos, Nigeria",
   phone: "+2347069541209",
   phoneDisplay: "+234 706 954 1209",
   email: "victorynnabugwu13@gmail.com",
+  /** Avatar-only mark (no name/tagline) — navbar logo & favicon source */
+  brandIcon: "/branding/icon.png",
   cvPath: "/cv.pdf",
-  cvDownloadName: "Victory_Nnabugwu_Frontend_Engineer_ATS.pdf",
+  cvDownloadName: "Victory_Nnabugwu_Software_Engineer_Resume.pdf",
   social: {
     github: "https://github.com/nvegs",
     linkedin: "https://www.linkedin.com/in/victorynnabugwu/",
@@ -24,7 +27,7 @@ export const site = {
   },
   availabilityBadge: "Remote & hybrid in Nigeria · open worldwide",
   workPreference:
-    "In Nigeria, I only consider remote and hybrid frontend roles. I'm also open to opportunities outside the country.",
+    "In Nigeria, I only consider remote and hybrid software engineering roles. I'm also open to opportunities outside the country.",
 } as const;
 
 export const navLinks = [
