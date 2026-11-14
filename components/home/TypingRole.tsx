@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const ROLES = [
-  "Frontend Engineer",
-  "React · Next · Angular",
-  "Fintech & Enterprise UI",
+  "Software Engineer",
+  "Web & Mobile Developer",
+  "React · Next · React Native",
 ];
 const TYPE_MS = 85;
 const DELETE_MS = 45;

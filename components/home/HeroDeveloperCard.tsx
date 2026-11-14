@@ -3,7 +3,12 @@
 import { motion } from "framer-motion";
 import { site } from "@/lib/site";
 
-const stack = ["React", "Next", "Angular"] as const;
+const stack = [
+  "React",
+  "Next.js",
+  "React Native",
+  "Angular",
+] as const;
 
 export function HeroDeveloperCard() {
   return (
@@ -33,17 +38,23 @@ export function HeroDeveloperCard() {
             {"\n"}
             {"  "}
             <span className="text-foreground/90">name:</span>{" "}
-            <span className="text-syntax-string">&quot;{site.shortName}&quot;</span>,
+            <span className="text-syntax-string">&quot;{site.name}&quot;</span>,
             {"\n"}
             {"  "}
             <span className="text-foreground/90">role:</span>{" "}
-            <span className="text-syntax-string">&quot;Frontend Eng&quot;</span>,
+            <span className="text-syntax-string">&quot;Software Eng&quot;</span>,
             {"\n"}
             {"  "}
             <span className="text-foreground/90">stack:</span>{" "}
             <span className="text-syntax-string">
-              [&quot;{stack[0]}&quot;, &quot;{stack[1]}&quot;, &quot;{stack[2]}
-              &quot;]
+              [
+              {stack.map((item, i) => (
+                <span key={item}>
+                  &quot;{item}&quot;
+                  {i < stack.length - 1 ? ", " : ""}
+                </span>
+              ))}
+              ]
             </span>,
             {"\n"}
             {"  "}

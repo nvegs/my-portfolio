@@ -12,9 +12,12 @@ import {
   SiJavascript,
   SiJest,
   SiJira,
+  SiDocker,
   SiNextdotjs,
   SiReact,
+  SiReactbootstrap,
   SiRedux,
+  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -23,6 +26,7 @@ import {
   MdAccessibility,
   MdDevices,
   MdOutlineSpeed,
+  MdArchitecture,
   MdViewQuilt,
 } from "react-icons/md";
 import { TbApi, TbFlask } from "react-icons/tb";
@@ -38,6 +42,10 @@ const techIcons: Record<string, IconType> = {
   "Tailwind CSS": SiTailwindcss,
   Bootstrap: SiBootstrap,
   Redux: SiRedux,
+  "React Native": SiReactbootstrap,
+  Supabase: SiSupabase,
+  Docker: SiDocker,
+  "Clean Architecture": MdArchitecture,
   "RTK Query": SiRedux,
   "Framer Motion": SiFramer,
   Git: SiGit,
